@@ -24,7 +24,7 @@
 
 #### Training Data Set
 
-<img src = "https://github.com/hyunas1996/CSE_software_engineering/files/4097260/DeepLearning_Lec_01_.01.pdf" width = "100%"></img>
+![DeepLearning_Lec_01_ 사진1](https://user-images.githubusercontent.com/45492242/72896230-94289b80-3d62-11ea-854c-93d7959f6c7a.png)
 
 <br/>
 
