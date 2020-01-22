@@ -18,7 +18,7 @@ Linear Model이 우리의 Data에 잘 맞을 것이라는 가정을 세움
 
 **학습** : Data에 잘 부합하는 Linear Equation 찾는 과정
 
-<img width="55%" src="https://user-images.githubusercontent.com/45492242/72896653-99d2b100-3d63-11ea-98dc-3c1d5e56feec.jpeg" alt="IMG_DF73B1751B8C-1" style="zoom:100%;" />
+<img width="40%" src="https://user-images.githubusercontent.com/45492242/72896653-99d2b100-3d63-11ea-98dc-3c1d5e56feec.jpeg" alt="IMG_DF73B1751B8C-1" style="zoom:100%;" />
 
 
 
@@ -30,7 +30,7 @@ Linear Model이 우리의 Data에 잘 맞을 것이라는 가정을 세움
 
 <br/>
 
-<img width="55%" src="https://user-images.githubusercontent.com/45492242/72897374-2c278480-3d65-11ea-84b0-a6f8f7c7bc18.JPG" alt="IMG_D33C3AA4E44D-1" style="zoom:100%;" />
+<img width="40%" src="https://user-images.githubusercontent.com/45492242/72897374-2c278480-3d65-11ea-84b0-a6f8f7c7bc18.JPG" alt="IMG_D33C3AA4E44D-1" style="zoom:100%;" />
 
 실제 data와 hypothesis 간의 거리를 측정하여 최선의 hypothesis (이전 그림의 line들 중에서) 를 찾아낸다.
 
