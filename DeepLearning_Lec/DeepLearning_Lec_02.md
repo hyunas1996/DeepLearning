@@ -1,8 +1,8 @@
-### DEEPLEARNING LEC 02 : Linear Regression의 가정과 cost function
+#### DEEPLEARNING LEC 02 : Linear Regression의 가정과 cost function
 
 <br/>
 
-#### Linear Regression
+##### Linear Regression
 
 <img width="55%" src="https://user-images.githubusercontent.com/45492242/72896424-16b15b00-3d63-11ea-8e48-d7f5d16905c4.JPG" alt="IMG_0988" style="zoom: 100%;" />
 
@@ -10,7 +10,7 @@
 
 <br/>
 
-#### Linear Hypothesis
+##### Linear Hypothesis
 
 Linear Model이 우리의 Data에 잘 맞을 것이라는 가정을 세움
 
@@ -36,22 +36,22 @@ Linear Model이 우리의 Data에 잘 맞을 것이라는 가정을 세움
 
 <br/>
 
-#### Cost Function (= Loss Function)
+##### Cost Function (= Loss Function)
 
 How fit the line to our training data를 측정하는 함수
 
 <br/>
 
-$H(x)-y$ : 가장 단순한 방식. 부호가 발생한다는 단점이 있다.
+$$H(x)-y$$ : 가장 단순한 방식. 부호가 발생한다는 단점이 있다.
 
-$(H(x)-y)^2$ : 가장 기본적인 방식. 부호가 없어서 편리하다. 
+$$(H(x)-y)^2$$ : 가장 기본적인 방식. 부호가 없어서 편리하다. 
 
 ​					  	 차이가 작을 때 보다 차이가 클 때 더 많은 penalty를 부여할 수 있다.
 
 <br/>
 
-$cost(W,b) = 1/m \sum_{i=1}^m (H(x_i)-y)^2  $  *(m : training data set의 data 개수)*
+$$cost(W,b) = 1/m \sum_{i=1}^m (H(x_i)-y)^2  $$  *(m : training data set의 data 개수)*
 
 <br/>
 
-**Linear Regression 의 학습 목표 : ** $cost(W,b)$ 를 최소화 시키는 W, b의 값 찾는 것!
+**Linear Regression 의 학습 목표 : ** $$cost(W,b)$$ 를 최소화 시키는 W, b의 값 찾는 것!

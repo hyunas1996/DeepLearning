@@ -1,8 +1,8 @@
-### DEEPLEARNING LEC 01 : Machine Learning 용어와 개념 정리
+#### DEEPLEARNING LEC 01 : Machine Learning 용어와 개념 정리
 
 <br/>
 
-#### Machine Learning
+##### Machine Learning
 
 일종의 software - explicit programming[^1]의 한계를 극복하기 위해 개발 되었다.
 
@@ -12,7 +12,7 @@
 
 <br/>
 
-#### Supervised / Unsupervised Learning
+##### Supervised / Unsupervised Learning
 
 학습하는 방식에 따라서 나뉘어짐
 
@@ -22,13 +22,13 @@
 
 <br/>
 
-#### Training Data Set
+##### Training Data Set
 
 <img width="55%" src="https://user-images.githubusercontent.com/45492242/72896230-94289b80-3d62-11ea-854c-93d7959f6c7a.png" alt="DeepLearning_Lec_01_ 사진1" style="zoom:50%;" />
 
 <br/>
 
-#### Types of Supervised
+##### Types of Supervised
 
 - Regression : 넓은 범위에서 예측
 
