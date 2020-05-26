@@ -1,0 +1,179 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "tensorflow_prac03.ipynb",
+      "provenance": [],
+      "private_outputs": true,
+      "authorship_tag": "ABX9TyO9Xg9e7B95DMqt35Y/AWo/",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/hyunas1996/DeepLearning/blob/master/keras%20sequential%20model%20%EC%9D%B4%EC%9A%A9%ED%95%98%EC%97%AC%20%EB%8B%A8%EC%9D%BC%20layer%20%EB%AA%A8%EB%8D%B8%20%EC%83%9D%EC%84%B1%26%ED%95%99%EC%8A%B5%ED%95%98%EA%B8%B0\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "OTC9MvhSOMOe",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "#keras sequential Model 연습 01\n",
+        "#단일 layer\n",
+        "\n",
+        "import tensorflow as tf\n",
+        "import numpy as np\n",
+        "import keras\n",
+        "\n",
+        "#generating training set & test set\n",
+        "\n",
+        "#training set\n",
+        "\n",
+        "x_train = np.array([[0], [1]])\n",
+        "y_train = x_train * 2 + 1\n",
+        "\n",
+        "print(x_train)\n",
+        "print(y_train)"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "WDzMfJULP7yB",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "print(x_train.shape, x_train.ndim)"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "58lADRaEQdPz",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "#test set\n",
+        "\n",
+        "x_test = np.array([[2], [3]])\n",
+        "y_test = x_test * 2 + 1\n",
+        "\n",
+        "print(x_test)\n",
+        "print(y_test)"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "YgLSG2QxQ52l",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "#generating sequential model!!!\n",
+        "\n",
+        "model = keras.models.Sequential()\n",
+        "print(type(model))"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "sZdqsu5VRhn-",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "#define nodes of model\n",
+        "\n",
+        "#input과 output이 각각 한 개인 node를 만들어서 model에 넣어준다. \n",
+        "model.add(keras.layers.Dense(1, input_shape=(1,)))\n",
+        "\n",
+        "#생성된 모델의 형태를 확인할 수 있다.\n",
+        "model.summary()"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "R3A_qzrHVtx4",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "#compiles model\n",
+        "\n",
+        "#SGD optimizer & mean squared error loss function used\n",
+        "model.compile('SGD', 'mse')\n",
+        "\n",
+        "#trains model\n",
+        "model.fit(x_train, y_train, epochs = 1000, batch_size = 2, verbose = 0)\n"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "MAb8s2LkYRbD",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "#evaluate model\n",
+        "\n",
+        "model.evaluate(x_test, y_test, batch_size = 2)"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "GEqns2_KYzaq",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "#predict value\n",
+        "\n",
+        "y_predict = model.predict(x_test, batch_size = 2)\n",
+        "\n",
+        "print('y_predict = ')\n",
+        "print(y_predict)\n",
+        "print()\n",
+        "print('y_test')\n",
+        "print(y_test)"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    }
+  ]
+}
